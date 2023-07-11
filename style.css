@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(247, 243, 243);
+    max-width: 100%;
+}
+.logo{
+    display: flex;
+    width: 100%;
+}
+#logoTxt{
+    padding-top: 40px;
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    font-size:16px;
+    font-weight: bold;
+}
+#logoTxt span{
+    color: rgb(29, 29, 219);
+}
+#logoImg img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#nav-bar{
+    width: 100%;
+}
+#nav-bar ul{
+    display: flex;
+    min-height: 30px;
+    line-height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#nav-bar li{
+    list-style: none;
+    margin-left: 20px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 16px;
+}
+#nav-bar a:hover{
+    color:rgb(253, 32, 32);
+}
+/*the hero section*/
+#hero{
+    max-width:100%;
+    height: 500px;
+    position: relative;
+    isolation: isolate;
+    background: url("images/Screenshot\ 2023-07-06\ 231356.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.6;
+    background: rgb(5, 5, 5);
+}
+#heading p{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    padding-top: 80px;
+}
+#content{
+    font-size: 20px;
+    padding-left: 40px;
+    color: rgb(252, 250, 250);
+}
+#cta{
+    max-width: 200px;
+    height: 30px;
+    background:rgb(29, 29, 219);
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#cta a{
+    color: rgb(241, 238, 238);
+    text-decoration: none;
+    line-height: 30px;
+}
+/*services section*/
+#services{
+    max-width: 100%;
+    padding-top: 80px;
+    min-height: 500px;
+    background:rgb(247, 246, 246);
+    padding-bottom: 80px;
+}
+#servicesIntro p{
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+}
+#servicesIntro h2{
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.servicesList{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#attendance,#consultation,#lab{
+    max-width: 400px;
+    height: 350px;
+    background:rgb(247, 247, 247);
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow:0 0 30px rgb(153, 153, 153);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#attendance h2,#consultation h2,#lab h2{
+    max-width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+#attendance p,#consultation p,#lab p{
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+#attendance a,#consultation a,#lab a{
+    text-decoration: none;
+    color:rgb(29, 29, 219);
+}
+#lab{
+    margin-right:40px;
+}
+#consultation img,#attendance img,#lab img{
+    height: 50px;
+    width: 90px;
+    margin-left: 120px;
+}
+/*the about section*/
+#about{
+    display: flex;
+    justify-content:space-around;
+    height: 650px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+    background: rgb(240, 238, 238);
+}
+#aboutImg img{
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 50px;
+}
+#aboutContent{
+    padding-top: 80px;
+}
+#aboutContent h2{
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+#aboutContent p{
+    font-size: 17px;
+    line-height: 30px;
+}
+/*the FAQ section*/
+#quizes{
+    background: linear-gradient(15deg ,rgb(152, 152, 201) ,rgb(236, 236, 236));
+    margin-top: 80px;
+    width: 100%;
+    max-height: 455px;
+    margin-bottom: 80px;
+}
+#quizes h2{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#q{
+    width: 100%;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#quizes hr{
+    margin-left: 30px;
+    margin-right: 10%;
+}
+#q span{
+    border: 1px rgb(17, 17, 17) solid;
+    border-radius: 50%;
+    margin-left:20px;
+}
+.extra{
+    display:flex;
+    flex-wrap: wrap;
+    background: rgb(235, 234, 234);
+    justify-content:space-around;
+}
+/*extra content section*/
+#extraContent{
+    width: 400px;
+}
+#extraContent h3{
+padding-top: 60px;
+font-weight: bolder;
+font-size: 20px;
+}
+#extraContent p{
+    font-size: 17px;
+    line-height: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#extraImg img{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.tech{
+    width: 100%;
+    padding-top: 100px;
+    background: rgb(250, 246, 246);
+
+}
+/*technology section*/
+#techUse{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 80px;
+
+}
+#techInfo{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+#techInfo h2,#techInfo p{
+    padding-bottom: 35px;
+}
+#f1,#f2,#f3{
+margin-left: 20px;
+display: flex;
+width: 400px;
+align-items: center;
+}
+#f1 img,#f2 img,#f3 img{
+    height: 300px;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(88, 88, 88);
+}
+#f1 h5,#f2 h5,#f3 h5{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+#f1 a,#f2 a,#f3 a{
+    text-decoration: none;
+    color: rgb(30, 30, 226);
+}
+/*sign up section*/
+.signUp{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(240, 240, 241);
+    padding-top: 80px;
+    margin-top: 80px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+}
+#signUpContent h3{
+    padding-bottom: 20px;
+    width: 450px;
+    line-height: 30px;
+}
+#signUpContent ul{
+list-style:square;
+line-height: 30px;
+padding-left: 40px;
+}
+button,input,select{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 320px;
+    height: 25px;
+}
+button{
+    background: rgb(7, 7, 7);
+}
+button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/*the CTA section*/
+#CTA{
+    background: url(images/Screenshot\ 2023-07-06\ 231037.png);
+    height: 225px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-left: 40px;
+    position: relative;
+    isolation: isolate;
+}
+#CTA{
+    width:100%;
+    height: 250px;
+    position: relative;
+    isolation: isolate;
+    background: url("images/Screenshot\ 2023-07-06\ 231037.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: rgb(10, 10, 10);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+#CTA::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.6;
+    background: rgb(100, 100, 100);
+}
+/*footer section*/
+footer{
+    padding-top: 80px;
+    background:rgb(17, 17, 17);
+
+}
+#footerContainer{
+    width: 100%;
+    background: rgb(17, 17, 17);
+    color: rgb(253, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+}
+#logoImg h2{
+padding-bottom: 30px;
+padding-top: 10px;
+}
+.fLogo{
+padding: 40px;
+width: 600px;
+line-height: 25px;
+
+}
+#browse,#fServices,#fContacts{
+padding-top: 40px;
+line-height: 28px;
+margin-right: 100px;
+width: 100px;
+}
+#browse h2,#fServices h2,#fContacts h2{
+    padding-bottom: 20px;
+
+}
+#browse ul,#fServices ul,#fContacts ul,#logoImg p{
+    list-style: none;
+    color: rgb(230, 230, 230);
+}
+@media  (max-width:500px) {
+    /*hero section*/
+    #nav-bar{
+        max-width:100% ;
+    }
+    #nav-bar li{
+        margin: 5px;
+    }
+    #nav-bar li a{
+        font-size: 10px;
+    }
+    #logoTxt{
+line-height: 35px;
+    }
+    #hero{
+        height:1000px;
+    }
+    /*services section*/
+    #attendance,#consultation,#lab{
+        margin: 40px;
+        height: 500px;
+
+    }
+    #services{
+        min-height: 600px;
+    }
+    #nav-bar a{
+        font-size: 14px;
+    }
+    /*about section*/
+#about{
+    display: flex;
+    justify-content:space-around;
+    min-height: 1300px;
+}
+#about h2,#about p{
+    margin-left: 40px;
+    line-height: 23px;
+}
+/*faq section*/
+#q{
+    width: 100%;
+    margin-left: 10px;
+}
+#quizes hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*extra content section*/
+#extraContent{
+    padding: 20px;
+}
+/*technology section*/
+#techUse{
+    flex-wrap: wrap;
+    height: 1500px;
+}
+#f1 img,#f2 img,#f3 img{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*signUp section*/
+#signUpContent ul{
+    margin-bottom: 30px;
+}
+#browse ul,#fServices ul,#fContacts ul,#logoImg p{
+    color: red;
+}
+#CTA{
+    height: 400px;
+}
+#cta{
+    width: 300px;
+}
+/*footer section*/
+#footerContainer{
+    display: block;
+    padding-left: 10px;
+}
+.fLogo{
+    padding: 0;
+}
+.signUp{
+    padding: 10px;
+}
+
+}
