@@ -6,7 +6,6 @@
         <link rel="Stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <main>
             <main>
                <header>
                 <!--header section-->
@@ -26,8 +25,8 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#quizes">FAQ</a></li>
                         <li><a href="#footerContainer">Contact</a></li>
-                        <li><a href="#">LogIn</a></li>
-                        <li><a href="#signUpContent">Sign Up</a></li>
+                        <li><a href="login.html">LogIn</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
                     </ul>
                     </div>
                 </div>
@@ -46,7 +45,7 @@
                     to help you live a heathy lifestlyle.
                 </div>
                 <div id="cta">
-                    <a href="#">Join Us Today</a>
+                    <a href="#signup">Join Us Today</a>
                 </div>
                 </section>
                 <section>
@@ -111,38 +110,49 @@
                                  to help you live a heathy lifestlyle.<br><br>
                             </p>
                             <div id="cta">
-                                <a href="#">More About Us</a>
+                                <a href="#signup">More About Us</a>
 
                             </div>
                         </div>
                     </div>
                 </section>
+                <!-- The FAQ section -->
                 <section>
                     <div id="quizes">
                         <h2>Frequently Asked questions</h2>
                         <hr>
                         <div id="q">
-                            <h4>Why should I choose Uzima clinic? <span>+</span></h4>
+                            <h4 data-quiz="q1" id="quizOne">Why should I choose Uzima clinic? <span>></span></h4>
+                            <p class="hide" id="q1">Uzima clinic is the best clinic in the country and rated among the to 10% 
+                                best clinics. Thus you are guranteed of best and secure services.
+                            </p>
                         </div>
                         <hr>
                         <div id="q">
-                            <h4>Who is eligible for Uzima services? <span>+</span></h4>
+                            <h4 data-quiz="q2" id="quizTwo">Who is eligible for Uzima services? <span>></span></h4>
+                            <p class="hide" id="q2">Everyone can get access to our services as they are very cheap and easily accessible.</p>
                         </div>
                         <hr>
                         <div id="q">
-                            <h4>Why should I choose Uzima clinic? <span>+</span></h4>
+                            <h4 data-quiz="q3" id="quizThree">Why should I choose Uzima services? <span>></span></h4>
+                            <p class="hide" id="q3">Our services are not only world class services, but also very affordable and pocket friendly.</p>
                         </div>
                         <hr>
                         <div id="q">
-                            <h4>What laboratory tests are offered? <span>+</span></h4>
+                            <h4 data-quiz="q4" id="quizFour">What laboratory tests are offered? <span>></span></h4>
+                            <p class="hide" id="q4">We make full body scanning and are specialized in showcasing some illnesses that are hard to be
+                                disclosed.
+                            </p>
                         </div>
                         <hr>
                         <div id="q">
-                            <h4>How is each service provided? <span> +</span></h4>
+                            <h4 data-quiz="q5" id="quizFive">How is each service provided? <span>></span></h4>
+                            <p class="hide" id="q5">Our medical team ensures that you get the best services there is.</p>
                         </div>
                         <hr>
                         <div id="q">
-                            <h4>How much does a service   cost? <span> +</span></h4>
+                            <h4 data-quiz="q6" id="quizSix">How much does a service   cost? <span>></span></h4>
+                            <p class="hide" id="q6">Most of our services cost approximately $3.55 while others are absolutely free.</p>
                         </div>
                     </div>
                 </section>
@@ -161,7 +171,7 @@
                                 Want to have a healthy family?<br>
                             </p>
                             <div id="cta">
-                                <a href="#">Join our community</a>
+                                <a href="#signup">Join our community</a>
                             </div>
                         </div>
                         <div id="extraImg">
@@ -216,7 +226,7 @@
                 </section>
                 <section>
                     <!--the signup Section -->
-                    <div class="signUp">
+                    <div class="signUp" id="signup">
                         <div id="signUpContent">
                             <h3>
                                 Subscribe to receive our monthly and annual
@@ -235,13 +245,13 @@
                                 <label>Last Name</label><br>
                                 <input type="text" placeholder="Last Name"><br>
                                 <label>Email Address*</label><br>
-                                <input type="email" placeholder="Email Address"><br>
+                                <input type="email" placeholder="Email Address" id="email"><br>
                                 <label>Nationality</label><br>
                                 <select>
                                     <Option>Kenyan Citizen</Option>
                                     <option>Other</option>
                                 </select><br>
-                                <button><a href="#">SIGN UP</a></button>
+                                <button id="signBtn"><a href="#">SIGN UP</a></button>
                             </form>
                         </div>
                     </div>
@@ -256,8 +266,8 @@
                                 <em>today!</em>
                             </h3>    
                         </div>
-                        <div id="cta">
-                            <a href="#">Join Us Today</a>
+                        <div id="cta2">
+                            <a href="#signup">Join Us Today</a>
                         </div>
                     </div>  
                     </div>
@@ -293,16 +303,20 @@
                         </div>
                         <div id="fContacts">
                             <h2>Contact Us</h2>
-                            <ul>
-                                <li>Kenya,Nakuru, Molo</li>
-                                <li>info@uzimaclinic.org</li>
-                                <li>+25473428022</li>
-                            </ul>
+                            <div id="socialIcons">
+                                <div>
+                                    <ul>
+                                        <li><img src="images/Screenshot 2023-07-18 005316.png"> uzimaclinic</li>
+                                        <li><img src="images/Screenshot 2023-07-18 005345.png"> +2547234568</li>
+                                        <li><img src="images/Screenshot 2023-07-18 005418.png"> @uzimaclinic</li>
+                                        <li><img src="images/Screenshot 2023-07-18 005507.png"> uzimaclinic@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </footer>
-               </body>
             </main>
-        </main>
+            <script src="index.js"></script>
     </body>
 </html>
